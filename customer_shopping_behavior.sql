@@ -39,7 +39,7 @@ LIMIT 5;
 SELECT 
 	CASE 
 		WHEN previous_purchases <= 1 THEN 'New'
-		WHEN previous_purchases BETWEEN 2 AND 10 THEN 'Returning'
+		WHEN previous_purchases BETWEEN 2 AND 5 THEN 'Returning'
 		ELSE 'Loyal'
 		END AS customer_segment,
 	COUNT(*) as total_customer FROM shop 
