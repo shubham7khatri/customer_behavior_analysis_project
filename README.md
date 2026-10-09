@@ -55,33 +55,11 @@ Promote subscriptions to the 73% of non-subscribers, starting with repeat buyers
 Run targeted campaigns to grow the female customer segment.
 Bundle Outerwear and Footwear with Clothing best-sellers.
 Reward Loyal customers and nudge New customers toward a second purchase.
-```
-🚀 How to Run
-Clone the repo
-```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
-   ```
-Install dependencies
-```bash
-   pip install pandas numpy sqlalchemy mysql-connector-python jupyter
-   ```
-Run the notebook: open `customer_analytics.ipynb`, update the CSV path if needed, and run all cells.
-Load into MySQL: in the last notebook cell, set your own MySQL credentials in the connection string. Use environment variables rather than typing a password into the notebook:
-```python
-   import os
-   from sqlalchemy import create_engine
-   engine = create_engine(
-       f"mysql+mysqlconnector://{os.environ['DB_USER']}:{os.environ['DB_PASS']}@localhost:3306/customer"
-   )
-   ```
-Run the queries: execute `customer_shopping_behavior.sql` in MySQL Workbench or any MySQL client.
-Dashboard: connect Power BI to the `shop` table (or the cleaned CSV) to rebuild the visuals.
+
 🧰 Tech Stack
 Python (Pandas, NumPy, SQLAlchemy) · Jupyter Notebook · MySQL · Power BI
 📂 Dataset
 Customer shopping behavior dataset with 3,900 transactions covering demographics, products, payment, shipping, discounts, reviews and purchase history.
-Source: [add dataset link here]
 👤 Author
 Shubham Khatri
 shubham7khatri@gmail.com
